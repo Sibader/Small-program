@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小程序导航--有道词典</title>
+	<link rel="stylesheet" href="../css/style3.css" type="text/css">
+	<script type="text/javascript" src="../js/setHomeSetFav.js" charset="gb2312"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/hide.js"></script>
+</head>
+<body>
+	<div class="top">
+	   <div class="top_content">
+		    <ul>
+			    <li><a href="#">联系我们</a></li>
+    			<li><a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a></li>
+    			<li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+		    </ul>
+	    </div>		
+	</div><!--top结束-->
+	<div class="warp">
+
+		<div class="logo">
+			<div class="logo_left"><img src="../image/logo.png" alt=""></div>
+			<div class="logo_mid"><img src="../image/title.PNG" alt=""></div>
+			<div class="logo_pic"><img src="../image/my_weixin.png" alt=""></div>
+			<div class="logo_right">关注我们</div>
+		</div><!--logo结束-->
+
+		<div class="nav">
+			<div class="nav_left"></div>
+			<div class="nav_mid">
+				<div class="nav_mid_left">
+					<ul>
+						<li><a href="../Sapp_HomePage.html">首页</a></li>
+                        <li><a href="../shopping.html">购物</a></li>
+                        <li><a href="../traffic.html">交通</a></li>
+                        <li><a href="../life.html">生活</a></li>
+                        <li><a href="../education.html">教育</a></li>
+                        <li><a href="../games.html">娱乐</a></li>
+                        <li><a href="../tools.html">工具</a></li>
+                        <li><a href="../more.html">更多</a></li>
+					</ul>
+				</div><!--nav_mid_left结束-->
+				<div class="nav_mid_right">
+					<form action="" method="post">
+						<input type="text" class="search_text">
+					</form>
+				</div><!--nav_mid_right结束-->
+			</div><!--nav_mid结束-->
+			<div class="nav_right"></div><!--nav_right结束-->
+		</div><!--nav结束-->
+
+		<div class="ad" id="picBox">
+		    <div class="pic">
+		        <ul>
+    		        <li><a href="#"><img src="../image/ad-pic/gongju-licai.jpg" ></a></li>    
+    		    </ul>	
+		    </div>		
+		</div><!--ad结束--> 
+
+        <div class="list_box">
+            <div class="list">
+                <div class="list_title">
+                    <h2 class="title_left">排行榜&nbsp&nbsp&nbsp&nbspTOP&nbsp5</h2>
+                </div> 
+                <div class="list_app">
+                    <ul>
+                        <li>
+                            <div class="top1">
+                                <div class="app_pic"><img src="../image/items/Games/ZSYXLM.PNG" alt=""></div>
+                                <div class="app_title"><a href="TOPS1.html">掌上英雄联盟</a></div>
+                                
+                                <div class="app_class">娱乐</div>
+                                <div class="hot_value">23854℃</div>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="top2">
+                                <div class="app_pic"><img src="../image/items/Shopping/PDD.PNG" alt=""></div>
+                                <div class="app_title"><a href="TOPS2.html">拼多多</a></div>
+                                
+                                <div class="app_class">购物</div>
+                                <div class="hot_value">22890℃</div>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="top3">
+                                <div class="app_pic"><img src="../image/items/Traffic/XCLX.PNG" alt=""></div>
+                                <div class="app_title"><a href="TOPS3.html">携程旅行</a></div>
+                                
+                                <div class="app_class">交通</div>
+                                <div class="hot_value">22574℃</div>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="top4">
+                                <div class="app_pic"><img src="../image/items/Education/YDCD.PNG" alt=""></div>
+                                <div class="app_title"><a href="TOPS4.html">有道词典</a></div>
+                                
+                                <div class="app_class">教育</div>
+                                <div class="hot_value">21964℃</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top5">
+                                <div class="app_pic"><img src="../image/items/Traffic/MBDC.PNG" alt=""></div>
+                                <div class="app_title"><a href="TOPS5.html">摩拜单车</a></div>
+                                
+                                <div class="app_class">交通</div>
+                                <div class="hot_value">21579℃</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--list_app结束-->  
+            </div><!--list结束-->
+            
+        </div><!--list_box结束-->
+
+        <div class="shop_box">
+               <div class="app_introduce">小程序介绍</div>
+               <div class="app_box">
+                   <div class="app_introduce_pic"><img src="../image/app-pic/Tops/YDCD.PNG" alt=""></div>
+                   <div class="app_introduce_title">有道词典</div>
+                   <div class="app_introduce_text">介绍：中国最受欢迎的免费全能翻译工具<br>
+                   发布人：网易有道信息技术<br>发布时间：2017-01-14 22:01</div>
+                   <div class="app_introduce_qrcode"><img src="../image/app-pic/Tops/YDCDEWM.PNG" alt=""></div>
+               </div>
+               <div class="app_screenshots">小程序截图</div>
+               <div class="app_screenshots_box">
+                   <img src="../image/app-pic/Tops/YDCD-1.png" alt="">
+                   <img src="../image/app-pic/Tops/YDCD-2.png" alt="">
+                   <img src="../image/app-pic/Tops/YDCD-3.png" alt="">
+               </div>
+               <div class="app_method">使用方法</div>
+               <div class="app_method_box">
+                   <div class="method-1">
+                        <div class="method-1_text">方法一：微信扫一扫，就可以立即使用小程序</div><img src="../image/app-pic/Tops/YDCDEWM.PNG" alt="">
+                        <div class="method-2_text">方法二：在微信小程序中搜索 <span>有道词典官方</span></div>
+                   </div>
+
+               </div>
+        </div><!--shop_box结束-->
+                  
+	</div><!--warp结束-->
+
+	<div class="copyright">
+		<div class="copyright_content">
+			<ul>
+                <li>关于
+                    <ul>
+                        <li>品牌故事</li>
+                        <li>联系我们</li>
+                        <li>加入我们</li>
+                        <li>版权声明</li>
+                    </ul>
+                </li>
+                <li>小程序
+                    <ul>
+                        <li>滴滴出行</li>
+                        <li>摩拜单车</li>
+                        <li>携程旅行</li>
+                        <li>人人车</li>
+                    </ul>
+                </li>
+                <li>关注
+                    <ul>
+                        <li>新浪微博</li>
+                        <li>腾讯微博</li>
+                        <li>企业微信</li>
+                        <li>QQ空间</li>
+                    </ul>
+                </li>
+                <li>留言
+                    <ul>
+                        <li>意见反馈</li>
+                        <li>问题留言</li>
+                        <li>媒体联络</li>
+                        <li>在线客服</li>
+                    </ul>
+                </li>
+                <li><img src="../image/weixin.png" alt="微信关注" width="30" height="27" />微信关注
+                    <ul>
+                        <li><img src="../image/my_weixin.png" alt="扫描关注官方微信" width="102" height="102" /></li>
+                  </ul>
+                </li>
+              </ul>
+		</div><!--copyright_content结束-->
+	</div><!--copyright结束-->
+</body>
+</html>

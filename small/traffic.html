@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小程序导航--交通</title>
+	<link rel="stylesheet" href="css/style2.css" type="text/css">
+	<script type="text/javascript" src="js/setHomeSetFav.js" charset="gb2312"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/hide.js"></script>
+</head>
+<body>
+	<div class="top">
+	   <div class="top_content">
+		    <ul>
+			    <li><a href="#">联系我们</a></li>
+    			<li><a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a></li>
+    			<li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+		    </ul>
+	    </div>		
+	</div><!--top结束-->
+	<div class="warp">
+
+		<div class="logo">
+			<div class="logo_left"><img src="image/logo.png" alt=""></div>
+			<div class="logo_mid"><img src="image/title.PNG" alt=""></div>
+			<div class="logo_pic"><img src="image/my_weixin.png" alt=""></div>
+			<div class="logo_right">关注我们</div>
+		</div><!--logo结束-->
+
+		<div class="nav">
+			<div class="nav_left"></div>
+			<div class="nav_mid">
+				<div class="nav_mid_left">
+					<ul>
+						<li><a href="Sapp_HomePage.html">首页</a></li>
+                        <li><a href="shopping.html">购物</a></li>
+                        <li><a href="traffic.html">交通</a></li>
+                        <li><a href="life.html">生活</a></li>
+                        <li><a href="education.html">教育</a></li>
+                        <li><a href="games.html">娱乐</a></li>
+                        <li><a href="tools.html">工具</a></li>
+                        <li><a href="more.html">更多</a></li>
+					</ul>
+				</div><!--nav_mid_left结束-->
+				<div class="nav_mid_right">
+					<form action="" method="post">
+						<input type="text" class="search_text">
+					</form>
+				</div><!--nav_mid_right结束-->
+			</div><!--nav_mid结束-->
+			<div class="nav_right"></div><!--nav_right结束-->
+		</div><!--nav结束-->
+
+		<div class="ad" id="picBox">
+		    <div class="pic">
+		        <ul>
+    		        <li><a href="#"><img src="image/ad-pic/jiaotong-xiecheng.png" ></a></li>    
+    		    </ul>	
+		    </div>		
+		</div><!--ad结束--> 
+
+        <div class="list_box">
+            <div class="list">
+                <div class="list_title">
+                    <h2 class="title_left">排行榜&nbsp&nbsp&nbsp&nbspTOP&nbsp5</h2>
+                </div> 
+                <div class="list_app">
+                    <ul>
+                        <li>
+                            <div class="top1">
+                                <div class="app_pic"><img src="image/items/Games/ZSYXLM.PNG" alt=""></div>
+                                <div class="app_title"><a href="html/TOPS1.html">掌上英雄联盟</a></div>
+                                
+                                <div class="app_class">娱乐</div>
+                                <div class="hot_value">23854℃</div>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="top2">
+                                <div class="app_pic"><img src="image/items/Shopping/PDD.PNG" alt=""></div>
+                                <div class="app_title"><a href="html/TOPS2.html">拼多多</a></div>
+                                
+                                <div class="app_class">购物</div>
+                                <div class="hot_value">22890℃</div>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="top3">
+                                <div class="app_pic"><img src="image/items/Traffic/XCLX.PNG" alt=""></div>
+                                <div class="app_title"><a href="html/TOPS3.html">携程旅行</a></div>
+                                
+                                <div class="app_class">交通</div>
+                                <div class="hot_value">22574℃</div>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="top4">
+                                <div class="app_pic"><img src="image/items/Education/YDCD.PNG" alt=""></div>
+                                <div class="app_title"><a href="html/TOPS4.html">有道词典</a></div>
+                                
+                                <div class="app_class">教育</div>
+                                <div class="hot_value">21964℃</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top5">
+                                <div class="app_pic"><img src="image/items/Traffic/MBDC.PNG" alt=""></div>
+                                <div class="app_title"><a href="html/TOPS5.html">摩拜单车</a></div>
+                                
+                                <div class="app_class">交通</div>
+                                <div class="hot_value">21579℃</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--list_app结束-->  
+            </div><!--list结束-->
+            
+        </div><!--list_box结束-->
+
+        <div class="shop_box">
+                <div class="shop_box_title">
+                    <h2 class="title_left">购物</h2>
+                </div>
+                <div class="list_main_left">
+                    <div class="list_top">
+                        <div class="left-1">
+                            <div class="list_main_pic"><img src="image/items/Traffic/CDT.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="html/CDT.html">查地铁&nbsp&nbsp&nbsp&nbsp购物</a></div>
+                            <div class="description">免流量查询各大城市地铁线路、出入口、运营时间<br>作者：查地铁</div>
+                            <div class="Qr_code"><img src="image/items/Traffic/CDTEWM.PNG" class="hide-left-1" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="left-2">
+                            <div class="list_main_pic"><img src="image/items/Traffic/DDCX.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">滴滴出行&nbsp&nbsp&nbsp&nbsp交通</a></div>
+                            <div class="description">滴滴出行为您提供滴滴快车服务，经济又舒适
+                            <br>作者：滴滴</div>
+                            <div class="Qr_code"><img src="image/items/Traffic/DDCXEWM.PNG" class="hide-left-2" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_bottom">
+                        <div class="left-3">
+                            <div class="list_main_pic"><img src="image/items/Traffic/HLZH.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">航旅纵横&nbsp&nbsp&nbsp&nbsp交通</a></div>
+                            <div class="description">中国民航信息官方打造的权威民航服务
+                            <br>作者：航旅纵横</div>
+                            <div class="Qr_code"><img src="image/items/Traffic/HLZHEWM.PNG" class="hide-left-3" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="left-4">
+                            <div class="list_main_pic"><img src="image/items/Traffic/MBDC.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">摩拜单车&nbsp&nbsp&nbsp&nbsp交通</a></div>
+                            <div class="description">扫码即可骑走的共享单车
+                            <br>作者：摩拜单车</div>
+                            <div class="Qr_code"><img src="image/items/Traffic/MBDCEWM.PNG" class="hide-left-4" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="left-5">
+                            <div class="list_main_pic"><img src="image/items/Traffic/NHEX.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">南航e行&nbsp&nbsp&nbsp&nbsp交通</a></div>
+                            <div class="description">南方航空伴你行，随心所欲预订各类服务
+                            <br>作者：南方航空</div>
+                            <div class="Qr_code"><img src="image/items/Traffic/NHEXEWM.PNG" class="hide-left-5" alt=""></div>
+                        </div>
+                    </div>                   
+                </div><!--list_main_left结束-->
+                <div class="list_main_right">
+                    <div class="list_top">
+                        <div class="right-1">
+                            <div class="list_main_pic"><img src="image/items/Traffic/QNEW.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">去哪儿网超级巴士&nbsp&nbsp&nbsp&nbsp交通</a></div>
+                            <div class="description">旅游交通超高性价比之选
+                            <br>作者：超级巴士</div>
+                            <div class="Qr_code"><img src="image/items/Traffic/QNEWEWM.PNG" class="hide-right-1" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="right-2">
+                            <div class="list_main_pic"><img src="image/items/Traffic/XCLX.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">携程旅行&nbsp&nbsp&nbsp&nbsp交通</a></div>
+                            <div class="description">提供酒店、机票、火车票、门票预订服务
+                            <br>作者：携程旅行</div>
+                            <div class="Qr_code"><img src="image/items/Traffic/XCLXEWM.PNG" class="hide-right-2" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_bottom">
+                        <div class="right-3">
+                            <div class="list_main_pic"><img src="image/items/Traffic/YLLX.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">艺龙旅行&nbsp&nbsp&nbsp&nbsp交通</a></div>
+                            <div class="description">艺龙旅行网为消费者提供全球200多个国家75万家酒店住宿及机票、火车票等预定服务
+                            <br>作者：艺龙</div>
+                            <div class="Qr_code"><img src="image/items/Traffic/YLLXEWM.PNG" class="hide-right-3" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="right-4">
+                            <div class="list_main_pic"><img src="image/items/Traffic/ZLJT.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">知了交通&nbsp&nbsp&nbsp&nbsp交通</a></div>
+                            <div class="description">你从哪里来，要往哪儿去？知了交通，帮你轻松查询交通路线
+                            <br>作者：ifanr</div>
+                            <div class="Qr_code"><img src="image/items/Traffic/ZLJTEWM.PNG" class="hide-right-4" alt=""></div>
+                        </div>
+                    </div>
+                    
+                </div><!--list_main_right结束-->
+                <div class="page">
+                    <a href="#">首页</a>
+                    <a href="#">&lt;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">…</a>
+                    <a href="#">&gt;</a>
+                    <a href="#">末页</a>
+                </div><!--page结束-->
+            </div><!--shop_box结束-->
+                  
+	</div><!--warp结束-->
+
+	<div class="copyright">
+		<div class="copyright_content">
+			<ul>
+                <li>关于
+                    <ul>
+                        <li>品牌故事</li>
+                        <li>联系我们</li>
+                        <li>加入我们</li>
+                        <li>版权声明</li>
+                    </ul>
+                </li>
+                <li>小程序
+                    <ul>
+                        <li>滴滴出行</li>
+                        <li>摩拜单车</li>
+                        <li>携程旅行</li>
+                        <li>人人车</li>
+                    </ul>
+                </li>
+                <li>关注
+                    <ul>
+                        <li>新浪微博</li>
+                        <li>腾讯微博</li>
+                        <li>企业微信</li>
+                        <li>QQ空间</li>
+                    </ul>
+                </li>
+                <li>留言
+                    <ul>
+                        <li>意见反馈</li>
+                        <li>问题留言</li>
+                        <li>媒体联络</li>
+                        <li>在线客服</li>
+                    </ul>
+                </li>
+                <li><img src="image/weixin.png" alt="微信关注" width="30" height="27" />微信关注
+                    <ul>
+                        <li><img src="image/my_weixin.png" alt="扫描关注官方微信" width="102" height="102" /></li>
+                  </ul>
+                </li>
+              </ul>
+		</div><!--copyright_content结束-->
+	</div><!--copyright结束-->
+</body>
+</html>

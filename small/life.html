@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小程序导航--生活</title>
+	<link rel="stylesheet" href="css/style2.css" type="text/css">
+	<script type="text/javascript" src="js/setHomeSetFav.js" charset="gb2312"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/hide.js"></script>
+</head>
+<body>
+	<div class="top">
+	   <div class="top_content">
+		    <ul>
+			    <li><a href="#">联系我们</a></li>
+    			<li><a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a></li>
+    			<li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+		    </ul>
+	    </div>		
+	</div><!--top结束-->
+	<div class="warp">
+
+		<div class="logo">
+			<div class="logo_left"><img src="image/logo.png" alt=""></div>
+			<div class="logo_mid"><img src="image/title.PNG" alt=""></div>
+			<div class="logo_pic"><img src="image/my_weixin.png" alt=""></div>
+			<div class="logo_right">关注我们</div>
+		</div><!--logo结束-->
+
+		<div class="nav">
+			<div class="nav_left"></div>
+			<div class="nav_mid">
+				<div class="nav_mid_left">
+					<ul>
+						<li><a href="Sapp_HomePage.html">首页</a></li>
+                        <li><a href="shopping.html">购物</a></li>
+                        <li><a href="traffic.html">交通</a></li>
+                        <li><a href="life.html">生活</a></li>
+                        <li><a href="education.html">教育</a></li>
+                        <li><a href="games.html">娱乐</a></li>
+                        <li><a href="tools.html">工具</a></li>
+                        <li><a href="more.html">更多</a></li>
+					</ul>
+				</div><!--nav_mid_left结束-->
+				<div class="nav_mid_right">
+					<form action="" method="post">
+						<input type="text" class="search_text">
+					</form>
+				</div><!--nav_mid_right结束-->
+			</div><!--nav_mid结束-->
+			<div class="nav_right"></div><!--nav_right结束-->
+		</div><!--nav结束-->
+
+		<div class="ad" id="picBox">
+		    <div class="pic">
+		        <ul>
+    		        <li><a href="#"><img src="image/ad-pic/shenghuo-zhongan.png" ></a></li>    
+    		    </ul>	
+		    </div>		
+		</div><!--ad结束--> 
+
+        <div class="list_box">
+            <div class="list">
+                <div class="list_title">
+                    <h2 class="title_left">排行榜&nbsp&nbsp&nbsp&nbspTOP&nbsp5</h2>
+                </div> 
+                <div class="list_app">
+                    <ul>
+                        <li>
+                            <div class="top1">
+                                <div class="app_pic"><img src="image/items/Games/ZSYXLM.PNG" alt=""></div>
+                                <div class="app_title"><a href="html/TOPS1.html">掌上英雄联盟</a></div>
+                                
+                                <div class="app_class">娱乐</div>
+                                <div class="hot_value">23854℃</div>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="top2">
+                                <div class="app_pic"><img src="image/items/Shopping/PDD.PNG" alt=""></div>
+                                <div class="app_title"><a href="html/TOPS2.html">拼多多</a></div>
+                                
+                                <div class="app_class">购物</div>
+                                <div class="hot_value">22890℃</div>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="top3">
+                                <div class="app_pic"><img src="image/items/Traffic/XCLX.PNG" alt=""></div>
+                                <div class="app_title"><a href="html/TOPS3.html">携程旅行</a></div>
+                                
+                                <div class="app_class">交通</div>
+                                <div class="hot_value">22574℃</div>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="top4">
+                                <div class="app_pic"><img src="image/items/Education/YDCD.PNG" alt=""></div>
+                                <div class="app_title"><a href="html/TOPS4.html">有道词典</a></div>
+                                
+                                <div class="app_class">教育</div>
+                                <div class="hot_value">21964℃</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top5">
+                                <div class="app_pic"><img src="image/items/Traffic/MBDC.PNG" alt=""></div>
+                                <div class="app_title"><a href="html/TOPS5.html">摩拜单车</a></div>
+                                
+                                <div class="app_class">交通</div>
+                                <div class="hot_value">21579℃</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--list_app结束-->  
+            </div><!--list结束-->
+            
+        </div><!--list_box结束-->
+
+        <div class="shop_box">
+                <div class="shop_box_title">
+                    <h2 class="title_left">生活</h2>
+                </div>
+                <div class="list_main_left">
+                    <div class="list_top">
+                        <div class="left-1">
+                            <div class="list_main_pic"><img src="image/items/Life/CYYS.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">春雨医生&nbsp&nbsp&nbsp&nbsp生活</a></div>
+                            <div class="description">春雨医生是医患之间的实时互动交流平台<br>作者：春雨医生</div>
+                            <div class="Qr_code"><img src="image/items/Life/CYYSEWM.PNG" class="hide-left-1" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="left-2">
+                            <div class="list_main_pic"><img src="image/items/Life/WMBB.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">我们宝贝&nbsp&nbsp&nbsp&nbsp会简单</a></div>
+                            <div class="description">我们宝贝记录孩子的成长，与亲友一起分享的微信小程序
+                            <br>作者：我们宝贝</div>
+                            <div class="Qr_code"><img src="image/items/Life/WMBBEWM.PNG" class="hide-left-2" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_bottom">
+                        <div class="left-3">
+                            <div class="list_main_pic"><img src="image/items/Life/KJYY.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">跨境医药&nbsp&nbsp&nbsp&nbsp生活</a></div>
+                            <div class="description">将境外优势医药资源引入中国内地，让普通人也能同享全世界健康科技新成
+                            <br>作者：唐仁健康</div>
+                            <div class="Qr_code"><img src="image/items/Life/KJYYEWM.PNG" class="hide-left-3" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="left-4">
+                            <div class="list_main_pic"><img src="image/items/Life/MY.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="html/MY.html">美柚&nbsp&nbsp&nbsp&nbsp生活</a></div>
+                            <div class="description">一款最懂女生的经期管理工具
+                            <br>作者：小柚子</div>
+                            <div class="Qr_code"><img src="image/items/Life/MYEWM.PNG" class="hide-left-4" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="left-5">
+                            <div class="list_main_pic"><img src="image/items/Life/QDFJD.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">求大夫鉴定&nbsp&nbsp&nbsp&nbsp生活</a></div>
+                            <div class="description">42万医生推荐的健康产品
+                            <br>作者：杏仁</div>
+                            <div class="Qr_code"><img src="image/items/Life/QDFJDEWM.PNG" class="hide-left-5" alt=""></div>
+                        </div>
+                    </div>                   
+                </div><!--list_main_left结束-->
+                <div class="list_main_right">
+                    <div class="list_top">
+                        <div class="right-1">
+                            <div class="list_main_pic"><img src="image/items/Life/SBWY.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">肾病问医&nbsp&nbsp&nbsp&nbsp生活</a></div>
+                            <div class="description">肾病/肾炎/尿毒症问医生
+                            <br>作者：肾上线</div>
+                            <div class="Qr_code"><img src="image/items/Life/SBWYEWM.PNG" class="hide-right-1" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="right-2">
+                            <div class="list_main_pic"><img src="image/items/Life/SDHZ.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">水滴互助&nbsp&nbsp&nbsp&nbsp生活</a></div>
+                            <div class="description">水滴互助是面向大病、意外的互助社群，一人患病，众人均摊
+                            <br>作者：水滴互助</div>
+                            <div class="Qr_code"><img src="image/items/Life/SDHZEWM.PNG" class="hide-right-2" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_bottom">
+                        <div class="right-3">
+                            <div class="list_main_pic"><img src="image/items/Life/SSBBXC.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">松鼠宝宝相册&nbsp&nbsp&nbsp&nbsp生活</a></div>
+                            <div class="description">一人分享，家人实时查看，记录成长故事，保留精彩瞬间，大容量云存储，永不丢失
+                            <br>作者：松鼠宝宝相册</div>
+                            <div class="Qr_code"><img src="image/items/Life/SSBBXCEWM.PNG" class="hide-right-3" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="right-4">
+                            <div class="list_main_pic"><img src="image/items/Life/SWP.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">食物派Lite&nbsp&nbsp&nbsp&nbsp生活</a></div>
+                            <div class="description">减肥健身饮食必备
+                            <br>作者：食物派</div>
+                            <div class="Qr_code"><img src="image/items/Life/SWPEWM.PNG" class="hide-right-4" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="list_mid">
+                        <div class="right-5">
+                            <div class="list_main_pic"><img src="image/items/Life/WMBB.PNG" alt=""></div>
+                            <div class="list_main_title"><a href="#">我们宝贝&nbsp&nbsp&nbsp&nbsp生活</a></div>
+                            <div class="description">我们宝贝记录孩子的成长，与亲友一起分享的微信小程序
+                            <br>作者：我们宝贝</div>
+                            <div class="Qr_code"><img src="image/items/Life/WMBBEWM.PNG" class="hide-right-5" alt=""></div>
+                        </div>
+                    </div>
+                </div><!--list_main_right结束-->
+                <div class="page">
+                    <a href="#">首页</a>
+                    <a href="#">&lt;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">…</a>
+                    <a href="#">&gt;</a>
+                    <a href="#">末页</a>
+                </div><!--page结束-->
+            </div><!--shop_box结束-->
+                  
+	</div><!--warp结束-->
+
+	<div class="copyright">
+		<div class="copyright_content">
+			<ul>
+                <li>关于
+                    <ul>
+                        <li>品牌故事</li>
+                        <li>联系我们</li>
+                        <li>加入我们</li>
+                        <li>版权声明</li>
+                    </ul>
+                </li>
+                <li>小程序
+                    <ul>
+                        <li>滴滴出行</li>
+                        <li>摩拜单车</li>
+                        <li>携程旅行</li>
+                        <li>人人车</li>
+                    </ul>
+                </li>
+                <li>关注
+                    <ul>
+                        <li>新浪微博</li>
+                        <li>腾讯微博</li>
+                        <li>企业微信</li>
+                        <li>QQ空间</li>
+                    </ul>
+                </li>
+                <li>留言
+                    <ul>
+                        <li>意见反馈</li>
+                        <li>问题留言</li>
+                        <li>媒体联络</li>
+                        <li>在线客服</li>
+                    </ul>
+                </li>
+                <li><img src="image/weixin.png" alt="微信关注" width="30" height="27" />微信关注
+                    <ul>
+                        <li><img src="image/my_weixin.png" alt="扫描关注官方微信" width="102" height="102" /></li>
+                  </ul>
+                </li>
+              </ul>
+		</div><!--copyright_content结束-->
+	</div><!--copyright结束-->
+</body>
+</html>
